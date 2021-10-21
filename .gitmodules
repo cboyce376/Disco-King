@@ -1,0 +1,4 @@
+[submodule "skyward-boardcore"]
+	path = skyward-boardcore
+	url = https://github.com/skyward-er/skyward-boardcore
+	branch = publish-dev

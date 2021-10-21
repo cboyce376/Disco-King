@@ -1,12 +1,10 @@
-# Lynx On-Board Software [![pipeline status](https://git.skywarder.eu/r2a/skyward-boardcore/badges/master/pipeline.svg)](https://git.skywarder.eu/r2a/skyward-boardcore/commits/master)
+# On-Board Software
 
-*On Board software for Lynx*
-
-To clone, use `git clone --recurse-submodules git@git.skywarder.eu:scs/hermes/r2a-obsw.git`.
+To clone, use `git clone --recurse-submodules https://github.com/skyward-er/on-board-software.git`.
 
 To build, use `sbs` (for more info, type `./sbs --help` on Linux or `sbs --help` on Windows).
 
-## Folder structure
+## Folders structure
 
 |   Folder               |   Content                                                    |
 | ---------------------- | ------------------------------------------------------------ |
@@ -21,9 +19,8 @@ To build, use `sbs` (for more info, type `./sbs --help` on Linux or `sbs --help`
 
 ## Useful entrypoints
 
-### Death Stack X Test Suite `src/entrypoints/death-stack-x-testsuite.cpp`
-
-Interactive entrypoint to test various aspects of the Death Stack hardware / software:  
+### Test Suite
+Interactive entrypoint to test various aspects of the Death Stack hardware / software: `src/entrypoints/death-stack-x-testsuite.cpp` 
 
 | Test              | Description                                              |
 | ----------------- | -------------------------------------------------------- |
@@ -32,10 +29,5 @@ Interactive entrypoint to test various aspects of the Death Stack hardware / sof
 | Test rf board     | Allows to test the IMUs, GPS and SD Card                 |
 | Test analog board | Allows to test the pressure sensors and detachment pins  |
 
-### Death Stack X Entry `src/entrypoints/death-stack-x-entry.cpp`
-
-Main entrypoint to be used for flight
-
-## Contributing
-
-If you are developing new features, branch off from the `testing` branch and then merge back.
+### Flight Entry
+Main entrypoint to be used for flight: `src/entrypoints/death-stack-x-entry.cpp`

@@ -1,4 +1,6 @@
-# On-Board Software
+<img src="doc/logo/lynx_logo.png" alt="drawing" width="250"/>
+
+# Lynx On-Board Software
 
 To clone, use `git clone --recurse-submodules https://github.com/skyward-er/on-board-software.git`.
 
